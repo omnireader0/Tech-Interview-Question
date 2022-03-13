@@ -1,4 +1,10 @@
-## CORS(Cross-Origin Resource Sharing)
+# CORS(Cross-Origin Resource Sharing)
+
+- CORS의 개념과 CORS로 인한 이슈 발생 구분
+- CORS 동작 방식 - preflight request 간단히 알면 될 것 같아요.
+- 심화 질문 : CORS 이슈 해결 방법 -> 필요한 분만 보시면 될 것 같습니다.
+
+## CORS와 SOP
 
 ### CORS (Cross-Origin Resource Sharing)
 
@@ -50,6 +56,10 @@ CORS는 서로 다른 도메인 간 자원 공유하는 매커니즘이며, **CO
 
 CORS 이슈는 **SOP(동일 출처 정책)에 의거해 다른 출처의 리소스를 사용할 때 경고가 생기고, 이를 해결하기 위해 CORS를 사용하여 접근을 허용하도록 설정**함으로써 해결할 수 있습니다.
 
+
+
+## CORS 동작과 이슈 해결 방법
+
 ### CORS 동작 원리
 
 ##### Prefilght request
@@ -87,13 +97,9 @@ app.use((req, res, next) => {
 
 https://wonit.tistory.com/572
 
----
+## QnA
 
-### 핵심 개념
 
-- CORS의 개념과 CORS로 인한 이슈 발생 구분
-- CORS 동작 방식 - preflight request 간단히 알면 될 것 같음
-- 심화 질문 : CORS 이슈 해결 방법 
 
 ### Reference
 
