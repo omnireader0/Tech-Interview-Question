@@ -40,7 +40,6 @@
 - 웹 소켓(Web Socket)
   - HTTP Polling, HTTP Long Polling
   - HTTP vs 웹 소켓
-  - SocketJs 와 Socket.io
   - QnA
 - CORS(Cross Origin Resource Sharing)
   - CORS
@@ -60,23 +59,24 @@
 ### **운영체제 : 3주  (~3.31)**
 
 - 운영체제와 컴퓨터 시스템 구조
-  - CPU Clock
   - QnA
 - 캐시의 지역성
   - 캐시의 종류와 쓰기
-  - 캐시의 지역성, 캐시 친화적인 코드
-  - Mapping Function
+  - 캐시의 지역성
+  - Mapping Function 개념 (MMU와 관련하여 설명) (Mapping Function 종류는 조사X)
   - QnA
 - 메모리 구성
   - 스택 동작 과정
   - Stack 과 Heap
   - 프로세스/스레드에서의 스택
   - QnA
-- 프로세스와 스레드
+- 프로세스와 스레드 1 - 동일인
   - Multi Process, Multi Thread, PCB, 프로세스 상태 전이
   - Interrupt, Context Switching
+  - QnA
+- 프로세스와 스레드 2 - 동일인
   - WAS, ThreadPool
-  - 스프링에서 동시성 이슈를 피하는 방법
+  - 동시성 이슈란?, 동시성 이슈를 피하는 방법 (스프링에서)
   - Thread Safe 하게 설계하는 방법
   - QnA
 - 프로세스 동기화
@@ -91,11 +91,11 @@
   - 기아상태, Livelock
   - QnA
 - CPU 스케줄링 기법
+  - 선점, 비선점
   - FIFO, SJF, STCF
   - Round Robin
   - Busy Waiting
   - Multi-Level Feedback Queue
-  - Priority Boost
   - QnA
 - 블락킹과 논블락킹, 동기식과 비동기식
   - 동기식과 비동기식
