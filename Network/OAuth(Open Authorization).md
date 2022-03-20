@@ -15,14 +15,16 @@
   | 인증(Authentication) | 유저가 누구인지 확인하는 절차, 회원가입하고 로그인 하는 것. |
   | 인가(Authorization)  | 유저에 대한 권한을 허락하는 것.                             |
 
-## OAuth1.0 -> OAuth1.0a
+## OAuth 버전변화
+
+### OAuth1.0 -> OAuth1.0a
 
 OpenID등 인증만을 위한 기능이 아닌 인증과 인가를 모두 사용할 목적으로 만들어졌으나 보안적인 문제로 OAuth1.0a이 나옴
 
 - 세션 고정 공격(session fixation attack)
   > https://en.wikipedia.org/wiki/Session_fixation
 
-## OAuth1.0a -> Oauth2.0
+### OAuth1.0a -> Oauth2.0
 
 앱어플리케이션에서 사용하기 어려운점, 복잡한 절차, 구현의 어려움, 복잡한 절차로 인한 연산의 부담 등을 보완하여 OAuth2.0이 나옴
 
@@ -157,13 +159,13 @@ resource server의 자원을 사용하고자 하는 client가 사전에 승인�
    - 요청주소 예시: https://authorization.server/token?grant_type=authorization_code&code=3&redirect_uri=https://client/callback&client_id=1&client_secret=2
 7. `Authorization Server`는 요청의 각 파라미터 확인 및 각 파라미터 내용이 담긴 access token을 생성하여 `Client`에게 전송
 
-### refresh token
+### 토큰갱신(refresh token)
 
 `access token`은 만료기간이 존재하여 만료된 이후에는 사용이 불가능 하며 `access token`을 재발급 받아야함
 
 - `access token`만 발급하는 경우도 있고, `refresh token`까지 발급하는 경우도 있음
 
-#### 발급과정
+#### refresh token 포함된 프로세스
 
 ```bash
   +--------+                                           +---------------+
@@ -188,7 +190,7 @@ resource server의 자원을 사용하고자 하는 client가 사전에 승인�
   +--------+           & Optional Refresh Token        +---------------+
 ```
 
-#### 발금요청 예시
+#### refresh token 요청 예시
 
 ```http
 POST /token HTTP/1.1
@@ -201,7 +203,7 @@ refresh_token=refresh_token&
 grant_type=refresh_token
 ```
 
-#### 발급응답 예시
+#### refresh token 응답 예시
 
 ```JSON
 {
@@ -212,7 +214,7 @@ grant_type=refresh_token
 }
 ```
 
-### 그외 인가방법
+### 그밖의 인가(Authorization)방법
 
 - Implicit: Authorization code는 생략하고 바로 access token을 발급받음
 - Resource Owner Password Credentials: `Resource Owner`의 아이디, 비밀번호를 `Client`직접 전달 받아 access token을 발급
@@ -260,9 +262,9 @@ grant_type=refresh_token
       +---------+
   ```
 
-### API를 사용항 Resource Server의 자원 사용
+### Resource Server의 자원 사용하기 위한 API요청
 
-#### http 사용
+#### http를 사용한 요청
 
 `query parameter`과 `Authorization: Bearer`두가지 방법이 있으며 Bearer를 사용하는것이 표준화되고 안전한 방법으로 권장함
 
@@ -291,8 +293,6 @@ grant_type=refresh_token
 - Bearer token: oauth를 위하여 고안된 인증표준으로 header, payload, signature 3가지로 구성되어 있어야함
 
   jwt를 access token으로 사용할수 있으나 bearer 표준을 준수하지 못할시 oauth에서 사용불가
-
-### Authorization Grant
 
 ## QnA
 
