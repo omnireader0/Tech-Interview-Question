@@ -4,7 +4,7 @@
 
 ### **네트워크**
 
-#### 🔗 질문 노트 바로 가기
+#### 🔗 [질문 노트 바로 가기](https://github.com/omnireader0/Tech-Interview-Question/blob/main/Question/%EB%84%A4%ED%8A%B8%EC%9B%8C%ED%81%AC_%EC%A7%88%EB%AC%B8%EC%A0%95%EB%A6%AC.md)
 
 #### ✍ 요약
 
@@ -47,7 +47,7 @@
 
 ### **운영체제**
 
-#### 🔗 질문 노트 바로 가기
+#### 🔗 [질문 노트 바로 가기](https://github.com/omnireader0/Tech-Interview-Question/blob/main/Question/%EC%9A%B4%EC%98%81%EC%B2%B4%EC%A0%9C_%EC%A7%88%EB%AC%B8%EC%A0%95%EB%A6%AC.md)
 
 #### ✍ 요약
 
@@ -119,7 +119,7 @@
 
 ### **데이터베이스**
 
-#### 🔗 질문 노드 바로 가기
+#### 🔗 [질문 노드 바로 가기](https://github.com/omnireader0/Tech-Interview-Question/blob/main/Question/%EB%8D%B0%EC%9D%B4%ED%84%B0%EB%B2%A0%EC%9D%B4%EC%8A%A4_%EC%A7%88%EB%AC%B8%EC%A0%95%EB%A6%AC.md)
 
 #### ✍ 요약
 
